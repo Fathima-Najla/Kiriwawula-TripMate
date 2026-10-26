@@ -1,0 +1,71 @@
+
+.dashboard-page {
+    min-height: 100vh;
+    background: #f5f7f4;
+    color: #24352c;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-navbar {
+    background: white;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-navbar h2 {
+    margin: 0;
+    color: #246747;
+}
+
+.dashboard-navbar button,
+.empty-itineraries button {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 16px;
+    margin: 4px;
+    cursor: pointer;
+    background: #246747;
+    color: white;
+}
+
+.dashboard-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px 22px;
+}
+
+.dashboard-content > h1 {
+    margin-bottom: 8px;
+}
+
+.dashboard-intro {
+    color: #657269;
+    margin-bottom: 28px;
+}
+
+.itinerary-card,
+.empty-itineraries {
+    background: white;
+    border-radius: 14px;
+    padding: 24px;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.itinerary-card h2 {
+    color: #246747;
+    margin-top: 0;
+}
+
+.itinerary-card li {
+    margin: 10px 0;
+}
+
+.dashboard-error {
+    color: #b42318;
+}

@@ -1,0 +1,60 @@
+.map-page {
+    min-height: 100vh;
+    background: #f7f7f5;
+}
+
+.map-page-header {
+    text-align: center;
+    padding: 70px 20px 35px;
+}
+
+.map-page-header p {
+    color: #c89b3c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.map-page-header h1 {
+    color: #1f5135;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.map-page-header span {
+    color: #666;
+    font-size: 16px;
+}
+
+.map-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 7% 70px;
+}
+
+.map-page-container .leaflet-container {
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+    .map-page-header {
+        padding: 50px 20px 25px;
+    }
+
+    .map-page-header h1 {
+        font-size: 32px;
+    }
+
+    .map-page-container {
+        padding: 20px 5% 50px;
+    }
+
+    .map-page-container .leaflet-container {
+        height: 450px;
+    }
+}

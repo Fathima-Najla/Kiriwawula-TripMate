@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f7f3;
+    color: #222;
+}
+
+.home-page {
+    min-height: 100vh;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f5135;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #1f5135;
+}
+
+.signup-btn {
+    background: #1f5135;
+    color: white !important;
+    padding: 11px 20px;
+    border-radius: 6px;
+}
+
+.signup-btn:hover {
+    background: #163d28;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 80px 7%;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("/images/dalada-2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.hero-small {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.08;
+    margin: 0 0 25px;
+    font-weight: 700;
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background: #d7a84b;
+    color: #111;
+}
+
+.primary-btn:hover {
+    background: #c59436;
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #222;
+}
+
+/* =========================
+   POPULAR PLACES
+========================= */
+
+.popular-section {
+    padding: 80px 7%;
+    text-align: center;
+    background: #f8f7f3;
+}
+
+.section-small {
+    color: #1f5135;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.popular-section h2 {
+    font-size: 38px;
+    margin: 0 0 15px;
+}
+
+.section-description {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.place-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.place-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-6px);
+}
+
+
+.place-image {
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+    background: #e9eee9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.place-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.place-image img.nelligala-3-image {
+    object-fit: contain;
+}
+
+.place-card h3 {
+    font-size: 20px;
+    margin: 20px 20px 10px;
+    color: #222;
+}
+
+.place-card p {
+    margin: 0 20px 25px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #173b27;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .place-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-section {
+        padding: 60px 5%;
+    }
+
+    .popular-section h2 {
+        font-size: 30px;
+    }
+
+        .navbar {
+        height: auto;
+        min-height: 75px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+}
